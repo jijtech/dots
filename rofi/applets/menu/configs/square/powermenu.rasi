@@ -1,0 +1,133 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+    show-icons:                     true;
+	font:                      		"Ubuntu NF 12";
+    disable-history:                false;
+	sidebar-mode: 					false;
+}
+
+@import "../../../styles/colors.rasi"
+
+* {
+    background-color:               @background;
+    text-color:                     @foreground;
+}
+
+window {
+    transparency:                   "real";
+    border-radius:                  10px;
+    border:                  		0px 0px 0px 0px;
+    location:                       south;
+    width:                       	580px;
+    height:							20%;
+    x-offset:                       10px;
+    y-offset:                       -50px;
+    margin:                         0px 0px 0px 0px;
+}
+
+prompt {
+    enabled: 						true;
+    padding:                        10px;
+	background-color: 				@background-light;
+	text-color: 					@accent;
+    border:                  		1px 2px 1px 2px;
+    border-radius:                  0px;
+    border-color:                  	@accent;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							" Sys status ";
+	background-color: 				@accent;
+	text-color: 					@background;
+    padding:                        10px 10px 0px 10px;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt ];
+    spacing:                        10px;
+    background-color:               @background;
+    text-color:                     @foreground;
+    expand:                         false;
+    border:                  		0px;
+    border-radius:                  5px;
+    border-color:                  	@accent;
+    margin:                         0px 0px 0px 0px;
+    padding:                        0px;
+    position:                       center;
+}
+
+listview {
+    columns:						15;
+    lines:							15;
+    spacing:                        20px;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         horizontal;
+}
+
+mainbox {
+    background-color:               @background;
+    children:                       [ inputbar, listview ];
+    spacing:                        5px;
+    margin:                         8px;
+    border-radius:                  5px;
+}
+
+element {
+    background-color:               @background-light;
+    text-color:                     @foreground;
+    orientation:                    vertical;
+    border-radius:                  0px;
+    position:                       center;
+
+}
+
+element-text {
+    background-color: 				inherit;
+    text-color:       				inherit;
+	font:							"Ubuntu NF 20";
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         0px 30px 0px 30px;
+}
+
+element normal.urgent,
+element alternate.urgent {
+    background-color:               @off;
+    text-color:                     @background;
+    border-radius:                  5px;
+}
+
+element normal.active,
+element alternate.active {
+    background-color:               @on;
+    text-color:                     @background;
+}
+
+element selected {
+    background-color:               @accent;
+    text-color:                     @background;
+    border:                  		0px;
+    border-radius:                  5px;
+    border-color:                  	@border;
+}
+
+element selected.urgent {
+    background-color:               @on;
+    text-color:                     @background;
+}
+
+element selected.active {
+    background-color:               @off;
+    color:                          @background;
+}
