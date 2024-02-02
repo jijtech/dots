@@ -7,14 +7,6 @@ import os, random, subprocess
 
 mod = "mod4"
 terminal = "kitty"
-wallpaper_dir = "/home/dhruv/Wallpapers/"
-
-def set_wallpaper(qtile=None, picture=None):
-    if picture == None:
-        picture = random.choice(os.listdir(wallpaper_dir))
-
-    for screen in screens:
-        screen.set_wallpaper(wallpaper_dir+picture, "fill")
 
 groups=[Group("1",
               layout="columns",
@@ -55,8 +47,6 @@ groups.append(
 
 keys.extend(
         [
-            Key([mod], "x", lazy.group["scratchpad"].dropdown_toggle("term")),
-            Key([mod], "w", lazy.function(set_wallpaper)),
         ]
     )
 layouts = [
@@ -85,7 +75,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="sans",
+    font="JetBrainsMono Nerd Font",
     fontsize=16,
 )
 

@@ -21,7 +21,7 @@ screens = [
                                 disable_drag=True,
                                 padding=4),
 
-                widget.Prompt(font="JetBrainsMono Nerd Font",
+                widget.Prompt(font="JetBrains Mono NF",
                               fmt="${}",
                               prompt=" "),
 
@@ -55,9 +55,9 @@ screens = [
                                    padding=0),
                 widget.Sep(padding=16),
 
-                widget.Backlight(backlight_name="amdgpu_bl0",
+                widget.Backlight(backlight_name="intel_backlight",
                                  change_command="brightnessctl set {0}%",
-                                 fmt="󰖨  {}",
+                                 fmt="{}",
                                  step=5.2,
                                  padding=0),
                 widget.Sep(padding=16),
@@ -65,11 +65,11 @@ screens = [
                 widget.Battery(format='{char} {percent:2.0%} {watt:.1f} W',
                                padding=0,
                                discharge_char = "",
-                               charge_char = "󱐋",
-                               empty_char = "∅"),
+                               charge_char = "",
+                               empty_char = ""),
                 widget.Sep(padding=16),
 
-                widget.QuickExit(default_text="[󰐥]",
+                widget.QuickExit(default_text="[]",
                                  countdown_format="[{}]",
                                  padding=0),
 
@@ -80,7 +80,9 @@ screens = [
             margin = [5, 5, 5, 5],
             border_width=[2, 2, 2, 2], 
         ),
-
+        wallpaper="~/.config/qtile/wall/wall.jpg",
+        #set mode
+        wallpaper_mode="fill"
         #x11_drag_polling_rate = 60,
     ),
 ]

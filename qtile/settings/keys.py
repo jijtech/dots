@@ -55,8 +55,8 @@ keys = [
     Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
 
     # launch browsers and shit
-    Key(["mod1"], "Space", lazy.spawn("rofi -show drun"), desc="run rofi"),
-    Key([mod], "b", lazy.spawn("brave-browser"), desc="Spawn brave browser"), 
+    Key([mod], "r", lazy.spawn("rofi -show drun"), desc="run rofi"),
+    Key([mod], "b", lazy.spawn("firefox"), desc="Spawn browser"), 
     Key([mod], "e", lazy.spawn("nemo"), desc="Spawn File explorer"),
 
     # screenshot
