@@ -47,23 +47,6 @@ Disable swap
     Run swapoff -a as root
     Run nano /etc/fstab (or any other editor) as root and comment out the swap partition
 
-# /etc/fstab: static file system information.
-#
-# Use 'blkid' to print the universally unique identifier for a
-# device; this may be used with UUID= as a more robust way to name devices
-# that works even if disks are added and removed. See fstab(5).
-#
-# <file system> <mount point>   <type>  <options>       <dump>  <pass>
-# / was on /dev/ubuntu-vg/ubuntu-lv during curtin installation
-/dev/disk/by-id/dm-uuid-LVM-1NFFlXGihIUK9XXPDG1fGjxmrc2fvQopze1G06NleTfGzRXUzKwxFkjcYb7ogccY / ext4 defaults 0 0
-# /boot was on /dev/sda2 during curtin installation
-/dev/disk/by-uuid/1dcbfcae-cacc-41d1-a111-ad7e6ac6c844 /boot ext4 defaults 0 0
-# /swap.img     none    swap    sw      0       0                                                   
- ↑ commented out
-
-    Save config and reboot
-    Run free and ensure swap is not in use
-
 alg@c1-master1:~$ free
               total        used        free      shared  buff/cache   available
 Mem:        2040788      171628      882724         756      986436     1709612
