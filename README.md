@@ -1,3 +1,14 @@
+<div style="display: flex;">
+  <button style="padding: 10px; border: 1px solid #ccc; cursor: pointer; background-color: #ddd;">Tab 1</button>
+  <button style="padding: 10px; border: 1px solid #ccc; cursor: pointer;">Tab 2</button>
+  <button style="padding: 10px; border: 1px solid #ccc; cursor: pointer;">Tab 3</button>
+
+  <div style="display: none;">Content for Tab 1</div>
+  <div style="display: none;">Content for Tab 2</div>
+  <div style="display: none;">Content for Tab 3</div>
+</div>
+
+
 <details>
 <summary>Tab 1</summary>
 <div>
