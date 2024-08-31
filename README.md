@@ -1,3 +1,4 @@
+
 #Basic Azure Devops Path-of-Choice Guide Format
 Write an basic introduction - explaining why one method might be preferred over the other. 
 _(Example: Windows Guide, MacOs Guide, Linux Guide)_
