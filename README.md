@@ -1,7 +1,7 @@
 
 
 <details>
-<summary>Powershell 5.X Guide</summary>
+<summary>Powershell 7.X Guide</summary>
 <div>
 **placeolder test**
 </div>
