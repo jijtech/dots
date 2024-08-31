@@ -1,15 +1,33 @@
-
+#Basic Azure Devops Path-of-Choice Guide Format
+Write an basic introduction - explaining why one method might be preferred over the other. 
+_(Example: Windows Guide, MacOs Guide, Linux Guide)_
 
 <details>
-<summary>Powershell 7.X Guide</summary>
+<summary>Guide 1 - Click Here to expand</summary>
 <div>
-**placeolder test**
+
+#Guide 1 Title
+some text
+
+```
+Some Command
+```
 </div>
 </details>
 
+---
 <details>
-<summary>Powershell 5.X Guide</summary>
+<summary>Guide 2 - Click Here to expand</summary>
 <div>
-**placeolder test**
+
+#Guide 2 Title
+some text
+
+```
+Some Command
+```
+
 </div>
 </details>
+
+---
