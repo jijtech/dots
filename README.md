@@ -1,15 +1,15 @@
 
 
 <details>
-<summary>Tab 1</summary>
+<summary>Powershell 5.X Guide</summary>
 <div>
-**PWSH 5.x**
+**placeolder test**
 </div>
 </details>
 
 <details>
-<summary>Tab 2</summary>
+<summary>Powershell 5.X Guide</summary>
 <div>
-**PWSH 7.X**
+**placeolder test**
 </div>
 </details>
