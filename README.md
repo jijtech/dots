@@ -8,7 +8,7 @@ _(Example: Windows Guide, MacOs Guide, Linux Guide)_
 <summary>Guide 1 - Click Here to expand</summary>
 <div>
 
-#Guide 1 Title
+# Guide 1 Title
 some text
 
 ```
@@ -22,7 +22,7 @@ Some Command
 <summary>Guide 2 - Click Here to expand</summary>
 <div>
 
-#Guide 2 Title
+# Guide 2 Title
 some text
 
 ```
